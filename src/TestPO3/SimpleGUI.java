@@ -27,6 +27,17 @@ public class SimpleGUI {
         panel.add(label2);
         panel.add(label3);
 
+        button1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                i+=1;
+                label1.setText("Result: " + i +" "+ "X" +" "+ t);
+                label2.setText("Last Scorer: AC Milan");
+                if(i < t) label3.setText("Winner: Real Mardid");
+                else if(i > t) label3.setText("Winner: AC Milan");
+                else label3.setText("Winner: ");
+            }
+        });
+
 
 
     }
