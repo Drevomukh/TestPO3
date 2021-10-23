@@ -38,7 +38,16 @@ public class SimpleGUI {
             }
         });
 
-
+        button2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                t+=1;
+                label1.setText("Result: " + i +" "+ "X" +" "+ t);
+                label2.setText("Last Scorer: Real Madrid");
+                if(i < t) label3.setText("Winner: Real Mardid");
+                else if(i > t) label3.setText("Winner: AC Milan");
+                else label3.setText("Winner: ");
+            }
+        });
 
     }
 }
