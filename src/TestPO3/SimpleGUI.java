@@ -14,5 +14,20 @@ public class SimpleGUI {
     JLabel label2 = new JLabel("Last Scorer: ");
     JLabel label3 = new JLabel("Winner: ");
 
+    public SimpleGUI(int a, int b) {
+        super("Простое графическое окно");
+        setSize(a, b);
+        setVisible(true);
 
+        add(panel);
+        panel.setLayout(new GridLayout(3,3));
+        panel.add(button1);
+        panel.add(button2);
+        panel.add(label1);
+        panel.add(label2);
+        panel.add(label3);
+
+
+
+    }
 }
