@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class SimpleGUI {
+public class SimpleGUI extends JFrame{
 
     JPanel panel = new JPanel();
     JButton button1 = new JButton("AC Milan");
